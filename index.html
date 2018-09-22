@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cutive" rel="stylesheet">
+	<title>Dashing Lashes</title>
+</head>
+
+<body>
+
+	<header id="top">
+		<nav>
+			<div id="myNav" class="overlay">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span id="cross">&times;</span></a>
+				<div class="overlay-content">
+					<a onclick="closeNav()" href="#tour">Tour</a>
+					<a onclick="closeNav()" href="#gallery">Gallery</a>
+					<a href="#">Collaborations</a>
+					<a onclick="closeNav()" href="#contact">Contact</a>
+				</div>
+			</div>
+			<span class="menu" style="cursor:pointer" onclick="openNav()"><span id="bar">&#9776;</span></span>
+		</nav>
+		<h1 class="band-header">Dashing Lashes</h1>
+	</header>
+
+	<main>
+		<div class="tour-dates" id="tour">
+			<h1 class="tour-title">Tour dates</h1>
+
+			<div class="concerts">
+
+				<div class="individual-concert">
+					<h1 class="date">12. April</h1>
+					<h3 class="venue">Rockerfeller</h3>
+					<h2 class="city">Oslo</h2>
+				</div>
+
+				<div class="individual-concert">
+					<h1 class="date">13. April</h1>
+					<h3 class="venue">Black Cat</h3>
+					<h2 class="city">Bergen</h2>
+				</div>
+
+				<div class="individual-concert">
+					<h1 class="date">14. April</h1>
+					<h3 class="venue">Tommy's</h3>
+					<h2 class="city">Stockholm</h2>
+				</div>
+
+				<div class="individual-concert">
+					<h1 class="date">16. April</h1>
+					<h3 class="venue">Anxia</h3>
+					<h2 class="city">Copenhagen</h2>
+				</div>
+
+				<div class="individual-concert">
+					<h1 class="date">18. April</h1>
+					<h3 class="venue">Cremer's</h3>
+					<h2 class="city">Helsinki</h2>
+				</div>
+
+				<div class="individual-concert">
+					<h1 class="date">20. April</h1>
+					<h3 class="venue">Die Zunt</h3>
+					<h2 class="city">Berlin</h2>
+				</div>
+
+
+				<div class="individual-concert">
+					<h1 class="date">21. April</h1>
+					<h3 class="venue">Green Velvet</h3>
+					<h2 class="city">Amsterdam</h2>
+				</div>
+
+				<div class="individual-concert">
+					<h1 class="date">22. April</h1>
+					<h3 class="venue">Polka</h3>
+					<h2 class="city">Rotterdam</h2>
+				</div>
+
+				<div class="individual-concert">
+					<h1 class="date">23. April</h1>
+					<h3 class="venue">Entrax beguille</h3>
+					<h2 class="city">Paris</h2>
+				</div>
+			</div>
+		</div>
+
+		<div class="gallery" id="gallery">
+			<h1>Gallery</h1>
+			<img src="images/concert.jpeg" alt="live concert at Woodstockk 2018">
+		</div>
+	</main>
+
+	<footer id="contact">
+	
+		<form action="form.html" method="post">
+			
+			<fieldset>
+			<legend>Contact Us</legend>
+			
+			<input type="text" id="name" name="user_name" placeholder="Name">
+			<input type="email" id="email name user-name" placeholder="E-mail">
+			<textarea name="comments" id="comments" cols="30" rows="5" placeholder ="Comments"></textarea>
+			<button type="submit" id="submit" name="submit">Submit</button>
+			
+			</fieldset>
+		</form>
+		
+		<div class="black-line"></div>
+	
+		<h1><a href="#top" class="band-name">Dashing&lowbar;Lashes</a></h1>
+		<div class="social-media">
+			<i class="fa fa-twitter-square" style="font-size:36px"></i>
+			<i class="fa fa-facebook-official" style="font-size:36px"></i>
+			<i class="fa fa-instagram" style="font-size:36px"></i>
+		</div>
+		<p>&copy; 2018, Claudio Recigno</p>
+	</footer>
+
+	<script>
+		function openNav() {
+			document.getElementById("myNav").style.width = "100%";
+		}
+
+		function closeNav() {
+			document.getElementById("myNav").style.width = "0%";
+		}
+	</script>
+
+</body>
+
+</html>

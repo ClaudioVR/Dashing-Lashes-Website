@@ -1,0 +1,288 @@
+/*   
+
+font-family: 'Nixie One', cursive;
+
+font-family: 'Cutive', serif;
+
+*/
+
+
+* {
+	box-sizing: border-box;
+}
+
+header {
+	background: url(images/light-bulb.jpeg);
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	font-family: 'Nixie One', cursive;
+	position: relative;
+}
+
+.band-header {
+/*
+	position: absolute;
+	bottom: 30px;
+	left: 10px;
+*/
+	text-align: center;
+	margin-top: 80vh;
+	
+}
+
+/*
+.wrapper {
+	width: 90%;
+	margin: auto;
+	background-color: red;
+}
+*/
+
+/* Navigation menu --------------------------------------------------------- */
+
+#cross {
+	font-size: 2em;;
+}
+
+/*
+#bar {
+	position: fixed;
+}
+*/
+
+.menu {
+	font-size: 2em;
+	margin-left: 10px;
+
+}
+
+.overlay {
+	height: 100%;
+	width: 0%;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0, 0.9);
+	overflow-x: hidden;
+	transition: width 0.5s;
+}
+
+.overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+	color: #f1f1f1;
+}
+
+.overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 20px;
+}
+
+
+
+
+/* Main --------------------------------------------------------------------- */
+
+.tour-dates {
+	text-transform: capitalize;
+	width: 100%;
+	margin: auto;
+	border: 1px solid transparent;
+}
+
+.tour-title {
+	text-align: center;
+	font-family: 'Cutive', serif;
+	margin: 50px auto 20px;
+}
+
+.concerts {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto;
+	grid-gap: 10px;
+	Font-family: 'Nixie One', cursive;
+}
+
+.individual-concert {
+	justify-self: center;
+	text-align: center;
+	border-bottom: 1px solid lightgrey;
+	width: 80%;
+}
+
+.date {
+	margin: 5px auto 10px;
+}
+
+.venue {
+	margin: 0 auto;
+	font-weight: 300;
+}
+
+.city {
+	margin: 0 auto 5px;
+}
+
+.gallery {
+	text-align: center;
+	font-family: 'Cutive', serif;
+	border: 1px solid transparent;
+	margin-top: 20px;;
+}
+
+.gallery img {
+	overflow-x: hidden;
+	width: 95%;
+	margin: .5em;
+}
+
+
+
+/* Footer ------------------------------------------------------- */
+
+footer {
+	height: auto;
+	width: 100%;
+	background-color: #EED255;
+	text-align: center;
+	font-family: 'Nixie One', cursive;
+}
+
+footer h1 {
+	text-align: center;
+	padding: 20px 0 0;
+	margin-top: 0;;
+}
+
+footer p {
+	font-size: 0.8em;
+}
+
+.band-name {
+	text-decoration: none;
+	color: #000;
+}
+
+.band-name:hover {
+	color: #F38D01;
+}
+
+/*Contact Form ----------------------------------------------------- */
+
+legend {
+	padding-top: 20px;
+	margin-bottom: 10px;
+}
+
+fieldset {
+	border: none;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+submit {
+	display: block;
+	margin: 0 auto 10px;
+	font-size: .8em;
+	text-align: ;
+	
+	font-weight: 200px;
+}
+
+input[type="text"],
+input[type="email"] {
+	height: 30px;
+	width: auto;
+	text-align: center;
+}
+
+textarea {
+	padding: 20px 0;
+	text-align: center;
+	border: none;
+}
+
+button {
+	background: black;
+	color: white;
+	font-size: .8em;
+	border-radius: 5px;
+	height: 30px;
+	width: 80px;
+	font-family: 'Nixie One', cursive;
+	cursor: pointer;
+}
+
+.black-line {
+	width: 80%;
+	margin: 10px auto 0;
+	border-bottom: 1px solid black
+}
+
+
+/* @media Queries --- Table 768px -------------------------------------- */
+/* --------------------------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+	
+	
+	nav {
+	padding-left: 2em;
+	padding-top: 2em;
+}
+	
+	.individual-concert {
+		justify-self: center;
+		text-align: center;
+		border-bottom: 1px solid lightgrey;
+		width: 60%;
+	}
+
+	.dropdown-content {
+		min-width: 150px;
+	}
+
+	.dropdown-content a {
+		font-family: 'Cutive', serif;
+		font-size: 1.3em;
+		padding: 15px 20px;
+		text-decoration: none;
+		display: block;
+	}
+	
+	.blocks {
+		font-size: 36px;
+	}
+
+}
+
+
+@media (min-width: 1024px) {
+	.band-header {
+		margin-top: 5vh;
+		font-size: 3em;
+	}
+}
